@@ -9,14 +9,27 @@
 - 保持原始图片不变，生成新的压缩后文件
 - 压缩后的文件名添加 "_compressed" 后缀
 
+# yasuo
 ## 使用方法
 
 1. 确保已安装 Go 环境
 2. 克隆仓库到本地
 3. 进入项目目录
-4. 运行程序：
+4. 设置必要的环境变量：
    ```bash
-   go run main.go
+   # 腾讯云API密钥
+   export SECRETID="你的腾讯云SecretId"
+   export SECRETKEY="你的腾讯云SecretKey"
+   
+   # COS存储桶URL
+   export COS_BUCKET_URL="https://你的存储桶地址.cos.ap-region.myqcloud.com"
+   
+   # 匹配URL中的路径模式的正则表达式
+   export MINIAPP_PATTERN="test/\\d{8}"
+   ```
+5. 运行程序：
+   ```bash
+   go run image_processor.go
    ```
 
 ## 依赖
