@@ -5,7 +5,7 @@ package main
 // - SECRETID: 腾讯云API密钥ID
 // - SECRETKEY: 腾讯云API密钥Key
 // - COS_BUCKET_URL: 腾讯云COS存储桶URL
-// - MINIAPP_PATTERN: 用于匹配URL中的路径模式的正则表达式，例如：`miniapp/\d{8}`
+// - MINIAPP_PATTERN: 用于匹配URL中的路径模式的正则表达式，例如：`test/\d{8}`
 
 import (
 	"context"
